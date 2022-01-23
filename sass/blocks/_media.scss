@@ -1,0 +1,257 @@
+@media (max-width: 1200px) {
+     .container {
+          max-width: 960px;
+     }
+     .promo {
+          min-height: 90vh;
+     }
+     .about {
+          &__wrapper {
+              grid-template-columns: 400px 520px; 
+              column-gap: 40px;
+          }
+          &__skills {
+               grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 250px);
+               column-gap: 20px;
+               &-item {
+                    grid-template-columns: 40px 195px; 
+                    column-gap: 15px;
+               }
+          }
+     }
+     .resume {
+          &__wrapper {
+               grid-template-columns: repeat(2, 400px);
+               column-gap: 100px;
+          }
+     }
+     .skills {
+          &__wrapper {
+               grid-template-columns: repeat(auto-fit, 270px);
+               justify-content: center;
+          }
+          &__ratings {
+               justify-content: center;
+          }
+     }
+}
+
+@media (max-width: 992px) {
+     .container {
+          max-width: 720px;
+     }
+     .promo {
+          min-height: 100vh;
+     }
+     .title {
+          &_fz36 {
+               font-size: 30px;
+          }
+     }
+     .about {
+          &__wrapper {
+              grid-template-columns: 300px 380px; 
+          }
+          &__skills {
+               grid-template-columns: 360px;
+               grid-auto-rows: minmax(115px, auto);
+               &-item {
+                    grid-template-columns: 40px 320px;
+                    column-gap: 20px; 
+               }
+          }
+     }
+     .resume {
+          padding-top: 40px;
+          &__wrapper {
+               justify-content: center;
+               grid-template-columns: 400px;
+               grid-auto-rows: auto;
+               row-gap: 40px;
+          }
+     }
+     .skills {
+          padding-top: 40px;
+          &__ratings {
+               grid-template-columns: repeat(auto-fit, 300px);
+               &-line {
+                    width: 100%;
+               }
+          }   
+     }
+     .portfolio {
+          padding-top: 40px;
+          &__wrapper {
+               margin-top: 40px;
+               grid-template: repeat(4, auto) / repeat(2, auto);  
+          }
+          &-item {
+               &:nth-child(1) {
+                    grid-row: 1 / 3;
+                    grid-column: 1 / 2;
+               }
+               &:nth-child(2) {
+                    grid-row: 1 / 3;
+                    grid-column: 2 / 3;
+               }
+               &:nth-child(3) {
+                    grid-row: 3 / 4;
+                    grid-column: 1 / 3;
+               }
+               &:nth-child(4) {
+                    grid-row: 4 / 5;
+                    grid-column: 1 / 3;
+               }
+               &:hover {
+                    transform: none;
+               }
+          }
+     }
+     .contacts {
+          &__form {
+               grid-template-columns: repeat(2 , 240px);
+          }
+     }
+}
+
+@media (max-width: 768px) {
+     .container {
+          max-width: 540px;
+
+     }
+     .sidepanel {
+          display: none;
+     }
+     .title {
+          &_fz48 {
+              font-size: 28px;
+          }
+          &__section-subtitle {
+               padding-top: 20px;
+               line-height: 36px;
+          }
+     }
+     .promo {
+          &__title {
+               line-height: 39px; 
+               width: 300px;
+          }
+          &__wrapper {
+               width: 360px;
+               margin: 0 auto;
+          }
+     }
+     .about {
+          padding-top: 40px;
+          &__wrapper {
+               grid-template: 400px auto auto / 1fr;
+          }
+          &__photo {
+               grid-row: unset;
+          }
+          &__skills {
+               grid-template-columns: repeat(2, 260px);
+               &-item {
+                    grid-template-columns: 40px 200px;
+                    column-gap: 20px;
+               }
+          }
+     }
+     .skills {
+          &__wrapper {
+               grid-template-columns: repeat(2, 270px);
+               padding-top: 35px;
+          }
+          &__ratings {
+               grid-auto-rows: 55px;
+          }
+     }
+     .contacts {
+          padding-top: 40px;
+          &__form {
+               grid-template-columns: repeat(2 , 240px);
+          }
+     }
+
+}
+
+@media (max-width: 576px) {
+     .container {
+          max-width: 100%;
+          padding: 0 15px;
+     }
+     .title {
+          &_fz48 {
+               font-size: 26px;
+          }
+          &_fz36 {
+               font-size: 24px;
+          }
+      }
+     .hamburger {
+          right: 20px;
+     }
+     .menu {
+          &__block {
+               width: 250px;
+               padding-left: 20px;
+          }
+     }
+     .promo {
+          &__btns {
+               margin-top: 30px;
+          }
+          &__wrapper {
+               width: 300px;
+          }
+     }
+     .about {
+          &__wrapper {
+               grid-template: 340px auto auto / 1fr;
+          }
+          &__skills {
+               grid-template-columns: 1fr;
+               &-item {
+                    grid-template-columns: 40px 200px;
+                    column-gap: 20px;
+               }
+          }
+     }
+     .resume {
+          &__wrapper {
+               grid-template-columns: 1fr;
+               padding: 40px 0 0 0;
+          }
+     }
+     .skills {
+          &__wrapper {
+               grid-template-columns: repeat(auto-fit, 270px);
+          }
+     }
+     .contacts {
+          padding-bottom: 50px;
+          &__form {
+              grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+          }
+          &__textarea {
+              grid-column: unset;
+              width: 100%;
+          }
+          &__triggers {
+              grid-column: unset;
+              grid-template-columns: 1fr;
+              column-gap: unset;
+              row-gap: 20px;
+          }
+          &__btn {
+              order: 2;
+              max-width: 220px;
+              margin: 0 auto;
+          }
+          &__policy {
+              width: 180px;
+              margin: 0 auto;
+              line-height: 18px;
+          }
+     }
+}
